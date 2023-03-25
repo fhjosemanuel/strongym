@@ -35,3 +35,37 @@ function validateForm() {
         return true;
     }
 }
+
+function registerValidation(event) {
+    // Evitar que se recargue la página
+    event.preventDefault();
+
+    // Validar el formulario
+    if (validateForm()) {
+        // Crear objeto FormData y agregar campos del formulario
+        var datos = new FormData();
+
+        datos.append("name", $("#name").val());
+        datos.append("email", $("#email").val());
+        datos.append("password", $("#password").val());
+
+        let ajax = new XMLHttpRequest();
+    
+        if (window.XMLHttpRequest) {
+            ajax = new XMLHttpRequest();
+        } else if (window.ActiveXObject) {
+            ajax = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        ajax.onreadystatechange = function() {
+            if( this.readyState === 4 && this.status === 200 ) {
+                //mensaje.innerHTML = this.responseText;
+                $("#mensaje").html(this.responseText);
+                document.getElementById("register-form").reset();
+            }
+        }
+
+        ajax.open("POST", "../../ajax/auth/Register.php", true);
+        ajax.send(datos);
+    }
+}
