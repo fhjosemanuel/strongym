@@ -62,6 +62,12 @@ class Query extends Conexion{
         $this->query = $query;
         return $this->set_query();
     }
+    public function update($table, $fillable, $conditions){
+        $query = "UPDATE ".$table." SET ".$fillable." WHERE ".$conditions;
+        //return $query;
+        $this->query = $query;
+        return $this->set_query();
+    }
     
 }
 ?>
