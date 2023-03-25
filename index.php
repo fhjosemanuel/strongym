@@ -58,6 +58,50 @@
                 </div>
             </div>
         </div>
+        <div class="row body-polea">
+            <div class="col-12 pt-5 pb-3 px-5">
+                <h2 class="text-center text-white pb-3">CREA TU RUTINA</h2>
+                
+
+                <div class="row black">
+                    <div class="col-sm-6 mt-3 body-grartob text-white">
+                        <div class="card body-grartob">
+                            <div class="card-body">
+                                <h4>¿Qué incluye crear tu rutina?</h4>
+                                
+                                <ul>
+                                    <li>Crea tus recordatorios de entrenos</li>
+                                    <li>Crea tu lista de ejercicios</li>
+                                    <li>Crea tu dieta</li>
+                                    <li>Recibir notificaciones</li>
+                                </ul>
+                                <div  class="text-center">
+                                    <a class="btn btn-lg btn-outline-light" href="views/auth/login.php">CREAR RUTINA</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mt-3 body-grartob">
+                        <div class="card body-grartob text-white">
+                            <div class="card-body">
+                                <h4>Hazte premium</h4>
+                                
+                                <ul>
+                                    <li>Crea sin límites</li>
+                                    <li>Acceso al blog</li>
+                                    <li>Ve la dietas de los demás</li>
+                                    <li>Sigue a otros usuarios</li>
+                                </ul>
+                                <div  class="text-center">
+                                    <a class="btn btn-lg btn-outline-light" href="views/auth/login.php">HAZME PREMIUM</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
