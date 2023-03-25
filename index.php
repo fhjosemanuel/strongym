@@ -41,6 +41,37 @@
         </nav>
     </header>
 
+    <!-- Footer -->
+    <footer style="background: #000;" class="container-fluid">
+        <div class="row justify-content-center pb-5">
+            <div class="col-12 text-center">
+                <img src="resources/img/svg/Fitness_Outline.svg" alt="GoldFit" width="306" height="206">
+                <p class="h1 font-playball green-100">Strong Gym</p>
+
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Iniciar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-10">
+                <hr style="height:0.2px;border-width:0;color:gray;background-color:gray">
+            </div>
+            <div class="col-12 text-center pt-3">
+                NIGLO &copy; 2023
+            </div>
+        </div>
+    </footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
