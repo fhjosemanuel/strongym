@@ -18,7 +18,7 @@
     <title>Strong Gym</title>
 </head>
 <body>
-<header>
+    <header> 
         <nav class="navbar navbar-expand-lg navbar-light shadow text-white" style="background: #000;">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -40,6 +40,25 @@
             </div>
         </nav>
     </header>
+
+    <main class="container-fluid">
+        <div class="row body-peso-muerto">
+            <div class="col-12 col-lg-8 vh-100">
+                <!-- Laptop hacia arriba -->
+                <div class="d-none d-lg-block">
+                    <p class="display-4 text-white font-rubikvinyl p-5">NO DEJES PARA MAÑANA LO QUE PUEDES HACER HOY</p>
+                    <h3 class="display-3 font-playball green-100 px-5">STRONG GYM</h3>
+                    <a class="btn btn-lg btn-outline-light ml-5 mt-5" href="views/auth/login.php">CREAR RUTINA</a>
+                </div>
+                <!-- celular y tablet -->
+                <div class="d-block d-lg-none">
+                    <p class="h1 text-white font-rubikvinyl p-5">NO DEJES PARA MAÑANA LO QUE PUEDES HACER HOY</p>
+                    <h3 class="h1 font-playball green-100 px-5">STRONG GYM</h3>
+                    <a class="btn btn-lg btn-outline-light ml-5 mt-5" href="views/auth/login.php">CREAR RUTINA</a>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <!-- Footer -->
     <footer style="background: #000;" class="container-fluid">
