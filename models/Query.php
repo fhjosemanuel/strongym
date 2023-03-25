@@ -68,6 +68,20 @@ class Query extends Conexion{
         $this->query = $query;
         return $this->set_query();
     }
-    
+    public function delete($table, $conditions)
+    {
+        $query = "DELETE FROM ".$table." WHERE ";
+        for ($i=0; $i < count($conditions); $i++){
+            if ( count( $conditions )-1 == $i ){
+                $query .= $conditions[$i];
+            }else{
+                $query .= $conditions[$i].' AND ';
+            }
+        }
+        $query .= ";";
+        //return $query;
+        $this->query = $query;
+        return $this->set_query();
+    }
 }
 ?>
