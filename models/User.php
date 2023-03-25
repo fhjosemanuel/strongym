@@ -26,4 +26,21 @@ class User{
     {
         return $this->query->get(self::$model, ["*"], ["email = '$email'", "password = '$password'"]);
     }
+    
+    public function create( $values = array() )
+    {
+        return $this->query->insert(self::$model, self::$fillable, $values);
+    }
+    public function read()
+    {
+        return $this->query->get(self::$model, ["*"]);
+    }
+    public function update($fillable, $conditions)
+    {
+        return $this->query->update( self::$model, $fillable, $conditions );
+    }
+    public function delete($id, $profile)
+    {
+        return $this->query->delete( self::$model, ["id = $id"] );
+    }
 }
