@@ -17,6 +17,13 @@ abstract class Conexion{
     private function db_close(){
         $this->conn->close();
     }
+    //Ejecutar un query simple  del tipo (INSERT, DELTE, UPDATE)
+    protected function set_query(){
+        $this->db_open();
+        $result = $this->conn->query($this->query);
+        $this->db_close();
+        return $result;
+    }
     
 }
 ?>
