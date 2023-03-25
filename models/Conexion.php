@@ -24,6 +24,14 @@ abstract class Conexion{
         $this->db_close();
         return $result;
     }
-    
+    //TRAER RESULTTADOS DE UNA CONSULTA DE TIPO SELECT EN UN ARRAY
+    protected function get_query(){
+        $this->db_open();
+        $result = $this->conn->query($this->query);
+        while($this->rows[] = $result->fetch_assoc());
+        $result->close();
+        $this->db_close();
+        return array_pop($this->rows);
+    }
 }
 ?>
