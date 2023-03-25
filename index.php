@@ -102,6 +102,62 @@
 
             </div>
         </div>
+        <div class="row bg-white py-5">
+            <div class="col-12 pt-5 text-center h2 font-weight-bold orange-100">
+                Genera tu rutina
+            </div>
+            <div class="col-12 pt-5 text-center">
+                Lunes / Martes / Miércoles / Jueves / Viernes
+            </div>
+            <div class="table-responsive mt-5 mx-3">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Horario</th>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miércoles</th>
+                            <th>Jueves</th>
+                            <th>Viernes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>7:00 - 7:20</th>
+                            <th>Desayunar</th>
+                            <th>Desayunar</th>
+                            <th>Desayunar</th>
+                            <th>Desayunar</th>
+                            <th>Desayunar</th>
+                        </tr>
+                        <tr>
+                            <th>8:00 - 9:00</th>
+                            <th>Tomar creatina</th>
+                            <th>Tomar proteiína</th>
+                            <th>Tomar creatina</th>
+                            <th>Tomar proteiína</th>
+                            <th>Tomar creatina</th>
+                        </tr>
+                        <tr>
+                            <th>9:00 - 11:00</th>
+                            <th>Entrenamiento</th>
+                            <th>Entrenamiento</th>
+                            <th>Entrenamiento</th>
+                            <th>Entrenamiento</th>
+                            <th>Entrenamiento</th>
+                        </tr>
+                        <tr>
+                            <th>11:00 - 11:30</th>
+                            <th>Comer postentreno</th>
+                            <th>Comer postentreno</th>
+                            <th>Comer postentreno</th>
+                            <th>Comer postentreno</th>
+                            <th>Comer postentreno</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
