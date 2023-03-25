@@ -158,6 +158,26 @@
                 </table>
             </div>
         </div>
+        <div class="row bg-black text-white py-5 justify-content-around">
+            <div class="col-12 text-center">
+                <p class="h1">NUESTRO GYM</p>
+            </div>
+            <div class="col-auto pt-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="resources/img/strong-women.jpg" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col-auto pt-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="resources/img/comunidad-gym.jpg" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col-auto pt-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="resources/img/strong-man.jpg" class="card-img-top" alt="...">
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
