@@ -17,4 +17,14 @@ class PHPMailerController{
         $this->mail_username = "9217907b968b9f";
         $this->mail_password = "6da62ac90bd9e8";
     }
+
+    function generateVerificationCode($email){
+        //Caracteres validos
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $code = '';
+        for ($i = 0; $i < 13; $i++) {
+          $code .= $characters[rand(0, strlen($characters) - 1)];
+        }
+        return $code;
+    }
 }
