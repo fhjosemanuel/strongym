@@ -1,0 +1,27 @@
+.body-peso-muerto{
+    background-image: url("../img/strong-gym-peso-muerto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.body-polea{
+    background-image: url("../img/strong.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.body-grartob{
+    background-image: linear-gradient(to right, #434343 0%, black 150%);
+}
+.bg-black{
+    background-color: #000;
+}
+
+
+.alertify-sg {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+}
