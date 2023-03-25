@@ -13,4 +13,17 @@ class User{
     {
         $this->query = new Query();
     }
+
+    public function id( $id )
+    {
+        return $this->query->get(self::$model, ["*"], ["id = $id"]);
+    }
+    public function email( $email )
+    {
+        return $this->query->get(self::$model, ["*"], ["email = '$email'"]);
+    }
+    public function user( $email, $password )
+    {
+        return $this->query->get(self::$model, ["*"], ["email = '$email'", "password = '$password'"]);
+    }
 }
