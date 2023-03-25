@@ -31,6 +31,37 @@ class Query extends Conexion{
 		}
 		return $data;
     }
+    public function insert( $table, $fillable = array(), $values = array() ){
+        $query = "INSERT INTO ".$table." (";
+        foreach ($fillable as $fill){
+            if ( end( $fillable ) == $fill ){
+                $query .= $fill;
+            }else{
+                $query .= $fill.', ';
+            }
+        }
+        $query .= ") VALUES(";
+        for ( $i=0; $i < count($values); $i++ ){
+            if ( empty($values[$i]) && !( count($values)-1 == $i ) )
+            {
+                $query .= "NULL, ";
+            }
+            else if ( empty($values[$i]) && count($values)-1 == $i )
+            {
+                $query .= "NULL";
+            }
+            else if ( !empty($values[$i]) && count($values)-1 == $i )
+            {
+                $query .= "'".$values[$i]."'";
+            }else{
+                $query .= "'".$values[$i]."', ";
+            }
+        }
+        $query .= ");";
+        //return $query;
+        $this->query = $query;
+        return $this->set_query();
+    }
     
 }
 ?>
